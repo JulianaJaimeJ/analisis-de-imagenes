@@ -57,3 +57,8 @@ pos=find(z1>=250);
 znew=z1(pos);
 figure(7)
 imshow(znew)
+
+%% parte 3
+archivo = dir('CT_Data');
+
+% info = dicominfo(strcat('CT_Data/',archivo(3).name))
