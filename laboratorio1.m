@@ -62,3 +62,4 @@ imshow(znew)
 archivo = dir('CT_Data');
 
 % info = dicominfo(strcat('CT_Data/',archivo(3).name))
+    
