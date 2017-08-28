@@ -78,33 +78,33 @@ for k=1:267
         end
     end
 end
-
-%Se muestran todas las imágenes de manera dinámica para el eje z
-figure(1)
-title('Tomografía en el eje z');
-for i =1:267
-    imshow(A(:,:,i),[0 300])
-    drawnow
-end
-pause
-
-%Se convierte la matriz original para obtener los cortes del eje x
-y=zeros(512,267,512);
-for k = 1:512
-    x=A(k,:,:);
-    for i =1:512
-        for j=1:267
-            y(i,j,k)=x(1,i,j);
-        end
-    
-    end
-end
-%% cdcdc
-%Se muestran todas las imágenes de manera dinámica para el eje z
-figure(2)
-title('Tomografía en el eje x');
-for i = 1:512
-    imshow(y(:,:,i),[0 300])
-    drawnow
-end
+% 
+% %Se muestran todas las imágenes de manera dinámica para el eje z
+% figure(1)
+% title('Tomografía en el eje z');
+% for i =1:267
+%     imshow(A(:,:,i),[0 300])
+%     drawnow
+% end
+% pause
+% 
+% %Se convierte la matriz original para obtener los cortes del eje x
+% y=zeros(512,267,512);
+% for k = 1:512
+%     x=A(k,:,:);
+%     for i =1:512
+%         for j=1:267
+%             y(i,j,k)=x(1,i,j);
+%         end
+%     
+%     end
+% end
+% %% cdcdc
+% %Se muestran todas las imágenes de manera dinámica para el eje z
+% figure(2)
+% title('Tomografía en el eje x');
+% for i = 1:512
+%     imshow(y(:,:,i),[0 300])
+%     drawnow
+% end
     
