@@ -183,22 +183,22 @@ for i =1:pr %Se recorren todos los cortes
     s=vol(:,:,i);
     %Se divide el plano en 4 espacios para cada modalidad
     a=subplot(2,2,1); 
-    colormap(a,autumn);
     imshow(s,[]); %Se muestra la modalidad autumn
+    colormap(a,autumn);
     drawnow
     
     b=subplot(2,2,2);
-    colormap(b,winter);
     imshow(s,[]);%Se muestra la modalidad winter 
+    colormap(b,winter);
     drawnow
     
     c=subplot(2,2,3);
-    colormap(c,spring);
     imshow(s,[]);%Se muestra la modalidad spring
+    colormap(c,spring);
     drawnow
     
     d=subplot(2,2,4);
-    colormap(d,summer);
     imshow(s,[]);%Se muestra la modalidad summer
+    colormap(d,summer);
     drawnow
 end
