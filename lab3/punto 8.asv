@@ -1,0 +1,29 @@
+%% Punto 8
+
+circles = imread('coins.png');
+
+mascara = uint8(ones( size(circles,1 ), size( circles, 2) )); 
+
+and = and(circles,mascara);
+
+or = or(circles, mascara);
+
+xor = xor(circles, mascara);
+
+subplot(2,2,1);
+
+imshow(circles);
+
+subplot(2,2,2);
+
+imshow(and);
+
+subplot(2,2,3);
+
+imshow(or);
+
+subplot(2,2,4);
+
+imshow(xor);
+
+
