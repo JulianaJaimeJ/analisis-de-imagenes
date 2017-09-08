@@ -1,14 +1,17 @@
 %% Punto 12
 
-archivos = dir(fullfile(toolboxdir('images'),'imdata'));
+archivos = dir(fullfile(toolboxdir('images'),'imdata', '*.png'));
 
-randomNum = randi([3 100],1,6);
+randomNum = randi([1 28],1,6);
 fileNames = cell(6,1);
 
 %archivos(randomNum(i)).name
 
 for i = 1:6
-    fileNames{i,1} = archivos(randomNum(i)).name;
+    fileNames{i} = archivos(randomNum(i)).name;
 end
 
-montage(fileNames, 'Size', [3 2]);
+montage(fileNames);
+
+
+ 
